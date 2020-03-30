@@ -1,3 +1,5 @@
+package staff;
+
 public abstract class Employee {
 
     private String name;
@@ -23,12 +25,12 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double amount){
-        if(amount < 0){
+        if(amount <= 0){
             this.salary += amount;
         }
     }
 
     public double payBonus(){
-        return this.salary / 100
+        return this.salary / 100;
     }
 }
